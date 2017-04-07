@@ -1,0 +1,40 @@
+html{
+  text-align: center;
+  margin-left: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(201, 201, 195);
+}
+
+/*div general*/
+.box{
+  margin: 0px 0px;
+  padding: 10px 10px ;
+  display: inline-block;
+}
+
+/*clase de cada imagen*/
+.picture{
+  width: 25%;/*El valor necesario*/
+  height: 300px;
+  border-radius: 20px;
+  float: left;
+}
+
+/*informacion*/
+footer {
+  padding: 10px;
+  position: relative;
+  background-color: #3E3F40;
+  color: white;
+  width: auto;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  text-align:center;
+}
+
+p > a{
+  color: white;
+  text-decoration:none;
+}
