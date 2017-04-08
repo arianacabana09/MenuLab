@@ -1,37 +1,100 @@
-html{
+/*html{
   text-align: center;
   margin-left: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
   background-color: rgb(201, 201, 195);
-}
+}*/
 
-/*div general*/
-.box{
-  margin: 0px 0px;
-  padding: 10px 10px ;
+section {
+  margin-top: 80px;
+  text-align: center;
+  overflow: auto;
+ }
+
+ h2 {
+   margin: 20px auto;
+   padding: 20px;
+ }
+
+/*figure por coder*/
+#gallery .coder {
   display: inline-block;
+  margin: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
 }
 
-/*clase de cada imagen*/
-.picture{
-  width: 25%;/*El valor necesario*/
-  height: 300px;
-  border-radius: 20px;
-  float: left;
-}
-
-/*informacion*/
-footer {
-  padding: 10px;
+/*div principal*/
+#gallery div {
   position: relative;
+  display: inline-block;
+  margin: -0.173%;
+  width: 33.3%;
+  height: 350px;
+  overflow: hidden;
+}
+
+/*para figure y figcaption*/
+div .coder img, div .coder figcaption {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+/*cada img*/
+div .coder img {
+  height: 402px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/*cada span*/
+div .coder figcaption {
+  color: white;
+  font-style: bold;
+  font-size: 30px ;
+  background: #f7b617;
+  height: 400px;
+  width: 100%;
+  padding: 150px 10px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+/*hover de cada imagen*/
+div .coder img:hover {
+ opacity: 0.3;
+ transform: scale(1.1);
+ cursor: pointer;
+}
+
+/*hover de cada hover*/
+div .coder figcaption:hover {
+  opacity: 0.95;
+  cursor: pointer;
+}
+
+
+/*Info*/
+footer {
+  position: fixed;
+  bottom: 0px;
+  z-index: 100;
+  padding: 10px;
   background-color: #3E3F40;
   color: white;
-  width: auto;
+  width: 100%;
   height: 70px;
   bottom: 0;
   left: 0;
   text-align:center;
+
 }
 
 p > a{
